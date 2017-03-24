@@ -316,6 +316,8 @@
 <wire x1="0" y1="-7" x2="0" y2="-11" width="0.127" layer="51"/>
 <wire x1="0" y1="-11" x2="1" y2="-10" width="0.127" layer="51"/>
 <wire x1="0" y1="-11" x2="-1" y2="-10" width="0.127" layer="51"/>
+<text x="-7.62" y="7.62" size="1.27" layer="21">&gt;NAME</text>
+<text x="-7.62" y="-13.97" size="1.27" layer="21">&gt;VALUE</text>
 </package>
 <package name="CRE22F4FBBNE">
 <pad name="P$2" x="0" y="0" drill="7"/>
@@ -357,6 +359,43 @@
 <wire x1="-22" y1="2" x2="-22" y2="8" width="0.127" layer="21"/>
 <text x="-3" y="5" size="1.27" layer="21">&gt;NAME</text>
 <text x="-4" y="-5" size="1.27" layer="21">&gt;VALUE</text>
+</package>
+<package name="0437008.WR">
+<smd name="P$1" x="1.55" y="0" dx="1.6" dy="1.9" layer="1"/>
+<smd name="P$2" x="-1.55" y="0" dx="1.6" dy="1.9" layer="1"/>
+<wire x1="-1.6" y1="-0.815" x2="1.6" y2="-0.815" width="0.127" layer="51"/>
+<wire x1="1.6" y1="0.815" x2="1.6" y2="-0.815" width="0.127" layer="51"/>
+<wire x1="1.6" y1="0.815" x2="-1.6" y2="0.815" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-0.815" x2="-1.6" y2="0.815" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="1.2" x2="1.6" y2="1.2" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-1.2" x2="1.6" y2="-1.2" width="0.127" layer="21"/>
+<text x="-2.7" y="1.7" size="1.27" layer="21">&gt;NAME</text>
+<text x="-3.3" y="-2.9" size="1.27" layer="21">&gt;VALUE</text>
+</package>
+<package name="2X_ESQ-104-24-H-S__HMTSW-104-08-G-S-380">
+<description>ELEVATED SOCKET, .100 inch(2.54mm) PITCH</description>
+<wire x1="-5.334" y1="-3.811" x2="-5.334" y2="3.811" width="0.254" layer="51"/>
+<wire x1="-5.334" y1="3.811" x2="5.334" y2="3.811" width="0.254" layer="51"/>
+<wire x1="5.334" y1="3.811" x2="5.334" y2="-3.811" width="0.254" layer="51"/>
+<wire x1="5.334" y1="-3.811" x2="-5.334" y2="-3.811" width="0.254" layer="51"/>
+<pad name="5" x="-3.81" y="0" drill="1.016" diameter="1.524"/>
+<pad name="6" x="-1.27" y="0" drill="1.016" diameter="1.524"/>
+<pad name="7" x="1.27" y="0" drill="1.016" diameter="1.524"/>
+<pad name="8" x="3.81" y="0" drill="1.016" diameter="1.524"/>
+<text x="-5.49" y="4.48" size="1.27" layer="25">&gt;NAME</text>
+<text x="-6.24" y="-5.835" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="1" x="-3.81" y="2.54" drill="1.016" diameter="1.524"/>
+<pad name="2" x="-1.27" y="2.54" drill="1.016" diameter="1.524"/>
+<pad name="3" x="1.27" y="2.54" drill="1.016" diameter="1.524"/>
+<pad name="4" x="3.81" y="2.54" drill="1.016" diameter="1.524"/>
+<pad name="9" x="-3.81" y="-2.54" drill="1.016" diameter="1.524"/>
+<pad name="10" x="-1.27" y="-2.54" drill="1.016" diameter="1.524"/>
+<pad name="11" x="1.27" y="-2.54" drill="1.016" diameter="1.524"/>
+<pad name="12" x="3.81" y="-2.54" drill="1.016" diameter="1.524"/>
+<wire x1="-5.25" y1="3.75" x2="5.25" y2="3.75" width="0.127" layer="21"/>
+<wire x1="5.25" y1="3.75" x2="5.25" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="5.25" y1="-3.75" x2="-5.25" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="-5.25" y1="-3.75" x2="-5.25" y2="3.75" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -503,6 +542,34 @@
 <wire x1="165.1" y1="0" x2="35.56" y2="0" width="0.635" layer="91"/>
 <wire x1="35.56" y1="0" x2="0" y2="0" width="0.635" layer="91"/>
 <wire x1="35.56" y1="0" x2="35.56" y2="15.24" width="0.635" layer="91"/>
+</symbol>
+<symbol name="0437008.WR">
+<pin name="P$1" x="-12.7" y="0" visible="pad"/>
+<pin name="P$2" x="12.7" y="0" visible="pad" rot="R180"/>
+<wire x1="-5.08" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="5.08" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
+<text x="-7.62" y="5.08" size="1.27" layer="94">&gt;NAME</text>
+<text x="-7.62" y="-5.08" size="1.27" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="2X_ESQ-104-24-H-S__HMTSW-104-08-G-S-380">
+<wire x1="-17.78" y1="15.24" x2="17.78" y2="15.24" width="0.254" layer="94"/>
+<wire x1="17.78" y1="15.24" x2="17.78" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-15.24" x2="-17.78" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-15.24" x2="-17.78" y2="15.24" width="0.254" layer="94"/>
+<pin name="P1" x="-25.4" y="7.62"/>
+<pin name="P2" x="-25.4" y="2.54"/>
+<pin name="P3" x="-25.4" y="-2.54"/>
+<pin name="P4" x="-25.4" y="-7.62"/>
+<pin name="V1" x="25.4" y="7.62" rot="R180"/>
+<pin name="V2" x="25.4" y="2.54" rot="R180"/>
+<pin name="V3" x="25.4" y="-2.54" rot="R180"/>
+<pin name="V4" x="25.4" y="-7.62" rot="R180"/>
+<pin name="G1" x="-7.62" y="-22.86" rot="R90"/>
+<pin name="G2" x="-2.54" y="-22.86" rot="R90"/>
+<pin name="G3" x="2.54" y="-22.86" rot="R90"/>
+<pin name="G4" x="7.62" y="-22.86" rot="R90"/>
+<text x="-5.08" y="7.62" size="1.27" layer="94">&gt;NAME</text>
+<text x="-5.08" y="2.54" size="1.27" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -770,6 +837,56 @@ Wire to board 2.54 mm (.1 inch) pitch header (right-angle or vertical)
 <technologies>
 <technology name="">
 <attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="0437008.WR" prefix="F" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="0437008.WR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0437008.WR">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER_PN" value="0437008.WR" constant="no"/>
+<attribute name="MANUNFACTURER" value="Littelfuse Inc." constant="no"/>
+<attribute name="VALUE" value="8A, 35V" constant="no"/>
+<attribute name="VENDOR" value="Digi-key" constant="no"/>
+<attribute name="VENDOR_PN" value="F2892CT-ND" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2X_ESQ-104-24-H-S__HMTSW-104-08-G-S-380" prefix="J" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="2X_ESQ-104-24-H-S__HMTSW-104-08-G-S-380" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2X_ESQ-104-24-H-S__HMTSW-104-08-G-S-380">
+<connects>
+<connect gate="G$1" pin="G1" pad="9"/>
+<connect gate="G$1" pin="G2" pad="10"/>
+<connect gate="G$1" pin="G3" pad="11"/>
+<connect gate="G$1" pin="G4" pad="12"/>
+<connect gate="G$1" pin="P1" pad="1"/>
+<connect gate="G$1" pin="P2" pad="2"/>
+<connect gate="G$1" pin="P3" pad="3"/>
+<connect gate="G$1" pin="P4" pad="4"/>
+<connect gate="G$1" pin="V1" pad="5"/>
+<connect gate="G$1" pin="V2" pad="6"/>
+<connect gate="G$1" pin="V3" pad="7"/>
+<connect gate="G$1" pin="V4" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="4x3_2.54MM_HEADER" constant="no"/>
 </technology>
 </technologies>
 </device>
